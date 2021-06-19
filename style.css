@@ -7,23 +7,172 @@ body{
     margin: 0;
     min-width: 1076px;
 }
+
+ul{
+    list-style: none;
+}
+
 /*
 * [header]のスタイルシート
 */
+.header{
+    color: #fff;
+}
+
 
 .block-header{
     margin: 0px;
-    padding: 0 20px 10px;
+    padding: 0 0 10px;
     background-color: rgba(41, 208, 230, 0.568);
 }
 
-.header-list a{
+.header-list{
+    display: flex;
+}
+
+.header-item{
+    margin: 0 10px;
+}
+
+    .header-list a{
+        display: inline;
+        width: 100%;
+        max-width: 345px;
+        font-size: 12px;
+        color: #fff;
+        letter-spacing: 5px;
+        justify-content: left;
+        align-items: left;
+     }
+
+/*
+*[kanban]のスタイルシート
+*/
+
+.block-main {
+    text-align: center;
+    margin: 0px;
+}
+
+.box-kanban{
+    width: 100%;
+    height: 800px;
+    background-color: rgba(41, 208, 230, 0.568);   
+}
+
+
+.box-kanban{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.box-kanban-right{
+    text-align: center;
+    width: 50%;
+    position: relative;
+    top: 30%;
+}
+
+
+.box-kanban-left{
+    width: 50%;
+    position: relative;
+
+}
+.box-kanban-left-img{
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+
+}
+
+
+.box-kanban-left-img img{
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+}
+
+.box-kanban-right {
     display: block;
     width: 100%;
-    max-width: 345px;
-    font-size: 12px;
+    max-width: 500px;
     color: #fff;
+}
+
+.box-kanban-right img{
+    margin: 0;
+}
+
+.box-kanban-right h3{
+    font-size: 20px;
+    margin: 10px;
+    letter-spacing: 8px;
+    font-weight: normal;
+}
+
+.box-kanban-right span{
+    font-size: 24px;
+    margin: 10px 0;
     letter-spacing: 5px;
-    justify-content: left;
-    align-items: left;
+}
+
+.box-kanban-right p{
+    font-size: 15px;
+    margin: 10px 0;
+    letter-spacing: 8px;
+}
+
+/*
+*[profile]のスタイルシート
+*/
+.box-profile{
+    text-align: center;
+    margin: 100px 0;
+}
+.sub-title{
+    display: block;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0.3em;
+}
+.gear{
+    display: flex;
+    justify-content: center;
+}
+.skill-profile{
+    list-style: none;
+    display: inline;
+    text-align: center;
+}
+
+
+.icon-list {
+    list-style: none;
+    width: 100%;
+    max-width: 247px;
+    margin: 30px auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-list li {
+    margin-right: 22px;
+}
+
+.icon-list li:last-child {
+    margin-right: 0;
+}
+
+/*
+*アイコンサイズ調整
+*/
+
+.icon-size{
+    width: 50px;
+    height: 50px;
 }

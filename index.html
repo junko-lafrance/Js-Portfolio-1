@@ -16,15 +16,78 @@
     <!-- headerタグの作成
         ・ヘッダーに案内メニュー
             navタグとulタグとliタグを使っていきます-->
-    <header>
+    <header class="header">
         <nav class="block-header">
             <ul class="header-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
+                <li class="header-item"><a href="#">Home</a></li>
+                <li class="header-item"><a href="#">About</a></li>
+                <li class="header-item"><a href="#">Projects</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- mainタグの作成
+    ・kanban用とprofile用とproject用とcontact用の箱を作成する
+    →divタグを使っていきます
+    -->
+    <main>
+
+         <!--
+        看板の箱
+        -->
+        <section class="box-kanban">
+            <div class="box-kanban-left">
+                <div class="box-kanban-left-img">
+                        <img src="img/IMG_20210428_174050_2.jpg" alt="プロフィール画像" class="image-size">
+                </div>
+            </div>
+
+            <div class="box-kanban-right">
+                
+                    <div class="kanban-moji">
+                        <h3>Junko Sugino</h3>
+                        <span>杉野 順子</span>
+                        <p>Web Application Depveloper</p>
+                    </div> 
+            </div>
+        </section>
+
+        <!--
+        プロフィールの箱  
+        -->
+        <div class="box-profile">
+            <h2 class="sub-title">About</h2>
+            <ul class="gear">
+                <li>-----</li>
+                <li><a href=""></a></li>
+                <li>-----</li>
+            </ul>
+            <div class="skill-profile">
+                <p>HTML / CSS </p>
+                <p>1971年名古屋生まれ。地道で細かい引きこもり作業が大好きです。<br>
+                美味しいおやつとコーヒーがあれば、さらにご機嫌にお仕事します。<br>
+                紙の創作家でもあり、４cmサイズの紙日記をSNSで毎日更新しています。</p>
+            </div>
+            <ul class="icon-list">
+                <li>
+                    <a href="">
+                        <img src="img/github.svg" alt="ギットハブアイコン" class="icon-size">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/instagram.svg" alt="インスタアイコン" class="icon-size">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/twitter.svg" alt="ツイッターアイコン" class="icon-size">
+                    </a>
+                </li>
+               
+            </ul>   
+
+        </div>
+</main>
 </body>
 </html>
